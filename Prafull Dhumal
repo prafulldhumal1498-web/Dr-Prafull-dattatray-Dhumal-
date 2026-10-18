@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prafull Dhumal | Sales & Distribution Specialist</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.8rem; margin-bottom: 10px; font-weight: 700; }
+        header p { font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .badge { display: inline-block; background: #f59e0b; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-top: 15px; }
+        
+        container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; display: block; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .card h3 { color: #1e3a8a; margin-bottom: 12px; font-size: 1.4rem; }
+        .card ul { list-style: none; }
+        .card ul li { padding: 8px 0; border-bottom: 1px dashed #e2e8f0; font-size: 0.95rem; }
+        .card ul li:last-child { border-bottom: none; }
+        
+        .cta-section { text-align: center; background: #0f172a; color: white; padding: 50px 20px; margin-top: 40px; border-radius: 16px; }
+        .btn-whatsapp { display: inline-block; background: #22c55e; color: white; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-weight: bold; font-size: 1.1rem; margin-top: 15px; transition: 0.3s; }
+        .btn-whatsapp:hover { background: #16a34a; }
+        
+        footer { text-align: center; padding: 25px; color: #64748b; font-size: 0.9rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Prafull Dhumal</h1>
+        <p>Sales, Marketing & Distribution Specialist</p>
+        <div class="badge">Retail & FMCG Network Developer</div>
+    </header>
+
+    <container>
+        <div class="grid">
+            <!-- Core Expertise -->
+            <div class="card">
+                <h3>🎯 प्रमुख कौशल्ये (Core Expertise)</h3>
+                <ul>
+                    <li>✓ <strong>Retail Network Development:</strong> नवीन भागात व्हेंडर जोडणे.</li>
+                    <li>✓ <strong>Route Optimization:</strong> वेळेवर आणि योग्य पुरवठा नियोजन.</li>
+                    <li>✓ <strong>Brand Promotion:</strong> उत्पादनांचे मार्केटिंग आणि सेल्स वाढवणे.</li>
+                    <li>✓ <strong>Vendor Relationship:</strong> दुकानदारांशी दीर्घकालीन संबंध.</li>
+                </ul>
+            </div>
+
+            <!-- Retail Network -->
+            <div class="card">
+                <h3>🏪 माय रिटेल नेटवर्क (My Network)</h3>
+                <ul>
+                    <li>✓ <strong>100+ Verified Outlets:</strong> पुणे व आसपासच्या परिसरातील दुकाने.</li>
+                    <li>✓ <strong>Coverage Areas:</strong> पाषाण, बाणेर, औंध, बावधन आणि सुतारवाडी.</li>
+                    <li>✓ <strong>Direct Touchpoints:</strong> सर्व प्रमुख डेअरी आणि प्रोव्हिजन स्टोअर्स.</li>
+                </ul>
+            </div>
+
+            <!-- Current Portfolio -->
+            <div class="card">
+                <h3>🥛 प्रॉडक्ट्स व सेवा (Product Showcase)</h3>
+                <ul>
+                    <li>✓ ताजे दूध आणि दुग्धजन्य पदार्थ (ताक, लस्सी, दही).</li>
+                    <li>✓ प्रीमियम मिठाई (बासुंदी, श्रीखंड, मोदक).</li>
+                    <li>✓ होलसेल आणि रिटेल सप्लाय मॅनेजमेंट.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h2>तुमचा व्यवसाय आणि विक्री वाढवण्यासाठी संपर्क साधा</h2>
+            <p>नवीन ब्रँड लाँचिंग, व्हेंडर नेटवर्क आणि एफएमसीजी वितरणासाठी थेट संपर्क साधू शकता.</p>
+            <a href="https://wa.me/" class="btn-whatsapp">📲 WhatsApp द्वारे कनेक्ट व्हा</a>
+        </div>
+    </container>
+
+    <footer>
+        © 2026 Prafull Dhumal. All Rights Reserved. | Independent Business & Distribution Portfolio
+    </footer>
+
+</body>
+</html>
