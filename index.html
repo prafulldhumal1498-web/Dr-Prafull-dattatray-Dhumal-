@@ -30,6 +30,13 @@
         .stats-box { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 15px; border-radius: 6px; margin-bottom: 15px; }
         .stats-box h4 { color: #1e3a8a; font-size: 1.1rem; }
 
+        /* Product Gallery Grid */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 15px; }
+        .product-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; text-align: center; padding-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .product-card img { width: 100%; height: 160px; object-fit: cover; background: #f1f5f9; }
+        .product-card h4 { color: #1e3a8a; margin: 10px 0 4px 0; font-size: 1.05rem; }
+        .product-card p { font-size: 0.85rem; color: #64748b; }
+
         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
         th { background-color: #eff6ff; color: #1e3a8a; }
@@ -46,7 +53,7 @@
     <header>
         <!-- Profile Photo -->
         <div class="profile-img-container">
-            <img src="https://raw.githubusercontent.com/prafulldhumal1498-web/Dr-Prafull-dattatray-Dhumal-/main/1756972452872.jpg" alt="Prafull Dhumal" class="profile-img">
+            <img src="1000056377.jpg" alt="Prafull Dhumal" class="profile-img">
         </div>
         <h1>Prafull Dhumal</h1>
         <p>Sales, Marketing & Distribution Specialist</p>
@@ -126,57 +133,39 @@
             </table>
         </div>
 
-        <!-- Product List & Rates -->
+        <!-- Shivprasad Dairy Products Showcase with Direct Web Photos -->
         <div class="card" style="margin-top: 25px;">
-            <h3>🥛 उत्पादने आणि रेट कार्ड (Products Showcase)</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>प्रॉडक्टचे नाव (Product)</th>
-                        <th>पॅकेजिंग (Size)</th>
-                        <th>प्रकार (Category)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>ताजे दूध (Fresh Milk)</strong></td>
-                        <td>500 ml / 1 Litre</td>
-                        <td>डेअरी प्रॉडक्ट</td>
-                    </tr>
-                    <tr>
-                        <td><strong>ताक (Mahi / Butter Milk)</strong></td>
-                        <td>200 ml / 500 ml</td>
-                        <td>पेये (Beverages)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>लस्सी (Lassi)</strong></td>
-                        <td>200 ml Cup/Pouch</td>
-                        <td>डेअरी स्विट्स</td>
-                    </tr>
-                    <tr>
-                        <td><strong>दही (Dahi / Curd)</strong></td>
-                        <td>200g / 500g / Bulk Bucket</td>
-                        <td>डेअरी प्रॉडक्ट</td>
-                    </tr>
-                    <tr>
-                        <td><strong>बासुंदी & श्रीखंड (Basundi & Shrikhand)</strong></td>
-                        <td>250g / 500g Pack</td>
-                        <td>प्रीमियम मिठाई</td>
-                    </tr>
-                    <tr>
-                        <td><strong>मोदक (Special Modak)</strong></td>
-                        <td>Box Pack (Bulk Delivery)</td>
-                        <td>फेस्टिव्हल स्पेशल</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>🥛 शिवप्रसाद डेअरी उत्पादने (Shivprasad Products Range)</h3>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://shivprasadinfra.com/wp-content/uploads/2023/08/Ghee.jpg" alt="Pure Ghee">
+                    <h4>शुद्ध तूप (Pure Ghee)</h4>
+                    <p>Retail Jars & Bulk Tins</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://shivprasadinfra.com/wp-content/uploads/2023/08/Paneer.jpg" alt="Fresh Paneer">
+                    <h4>ताजे पनीर (Fresh Paneer)</h4>
+                    <p>Vacuum Packs & Catering Blocks</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://shivprasadinfra.com/wp-content/uploads/2023/08/Butter.jpg" alt="Dairy Butter">
+                    <h4>ताजे लोणी (Dairy Butter)</h4>
+                    <p>Retail Packs & Bulk Blocks</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://shivprasadinfra.com/wp-content/uploads/2023/08/Milk.jpg" alt="Fresh Milk">
+                    <h4>ताजे दूध (Pasteurised Milk)</h4>
+                    <p>Pouch & Bulk Supply</p>
+                </div>
+            </div>
         </div>
 
         <!-- Call to Action -->
         <div class="cta-section">
             <h2>तुमचा व्यवसाय आणि विक्री वाढवण्यासाठी संपर्क साधा</h2>
             <p>नवीन ब्रँड लाँचिंग, व्हेंडर नेटवर्क आणि एफएमसीजी वितरणासाठी थेट संपर्क साधू शकता.</p>
-            <a href="https://wa.me/919370105924?text=Hello%20Prafull,%20I%20want%20to%20connect%20for%20business%20and%20distribution." class="btn-whatsapp" target="_blank">📲 WhatsApp (+91 9370105924)</a>
+            <a href="https://wa.me/919370105924?text=Hello%20Prafull,%20I%20want%20to%20connect%20for%20business%20and%20Shivprasad%20dairy%20distribution." class="btn-whatsapp" target="_blank">📲 WhatsApp (+91 9370105924)</a>
         </div>
     </container>
 
