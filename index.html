@@ -7,25 +7,30 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 2.8rem; margin-bottom: 10px; font-weight: 700; }
-        header p { font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 50px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 8px; font-weight: 700; }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
         .badge { display: inline-block; background: #f59e0b; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-top: 15px; }
         
-        container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; display: block; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        container { max-width: 1100px; margin: 0 auto; padding: 30px 15px; display: block; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
         
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
-        .card h3 { color: #1e3a8a; margin-bottom: 12px; font-size: 1.4rem; }
+        .card { background: white; padding: 22px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .card h3 { color: #1e3a8a; margin-bottom: 15px; font-size: 1.3rem; border-bottom: 2px solid #3b82f6; padding-bottom: 8px; }
         .card ul { list-style: none; }
-        .card ul li { padding: 8px 0; border-bottom: 1px dashed #e2e8f0; font-size: 0.95rem; }
+        .card ul li { padding: 10px 0; border-bottom: 1px dashed #e2e8f0; font-size: 0.95rem; }
         .card ul li:last-child { border-bottom: none; }
         
-        .cta-section { text-align: center; background: #0f172a; color: white; padding: 50px 20px; margin-top: 40px; border-radius: 16px; }
+        /* Table Styling for Products & Shops */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
+        th { background-color: #eff6ff; color: #1e3a8a; }
+        
+        .cta-section { text-align: center; background: #0f172a; color: white; padding: 40px 20px; margin-top: 30px; border-radius: 16px; }
         .btn-whatsapp { display: inline-block; background: #22c55e; color: white; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-weight: bold; font-size: 1.1rem; margin-top: 15px; transition: 0.3s; }
         .btn-whatsapp:hover { background: #16a34a; }
         
-        footer { text-align: center; padding: 25px; color: #64748b; font-size: 0.9rem; margin-top: 40px; }
+        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.85rem; margin-top: 30px; }
     </style>
 </head>
 <body>
@@ -49,25 +54,99 @@
                 </ul>
             </div>
 
-            <!-- Retail Network -->
+            <!-- Coverage Areas -->
             <div class="card">
-                <h3>🏪 माय रिटेल नेटवर्क (My Network)</h3>
+                <h3>📍 कव्हरेज एरिया व रूट्स (Coverage Areas)</h3>
                 <ul>
-                    <li>✓ <strong>100+ Verified Outlets:</strong> पुणे व आसपासच्या परिसरातील दुकाने.</li>
-                    <li>✓ <strong>Coverage Areas:</strong> पाषाण, बाणेर, औंध, बावधन आणि सुतारवाडी.</li>
-                    <li>✓ <strong>Direct Touchpoints:</strong> सर्व प्रमुख डेअरी आणि प्रोव्हिजन स्टोअर्स.</li>
+                    <li>📍 <strong>पाषाण & सुतारवाडी (Pashan Route)</strong></li>
+                    <li>📍 <strong>बाणेर & बालेवाडी (Baner Route)</strong></li>
+                    <li>📍 <strong>औंध (Aundh Route)</strong></li>
+                    <li>📍 <strong>बावधन (Bavdhan Route)</strong></li>
+                    <li>📍 <strong>100+ Verified Dairy & Retail Outlets</strong></li>
                 </ul>
             </div>
+        </div>
 
-            <!-- Current Portfolio -->
-            <div class="card">
-                <h3>🥛 प्रॉडक्ट्स व सेवा (Product Showcase)</h3>
-                <ul>
-                    <li>✓ ताजे दूध आणि दुग्धजन्य पदार्थ (ताक, लस्सी, दही).</li>
-                    <li>✓ प्रीमियम मिठाई (बासुंदी, श्रीखंड, मोदक).</li>
-                    <li>✓ होलसेल आणि रिटेल सप्लाय मॅनेजमेंट.</li>
-                </ul>
-            </div>
+        <!-- Product List & Rates -->
+        <div class="card" style="margin-top: 25px;">
+            <h3>🥛 उत्पादने आणि रेट कार्ड (Products & Rates)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>प्रॉडक्टचे नाव (Product)</th>
+                        <th>पॅकेजिंग (Size)</th>
+                        <th>प्रकार (Category)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ताजे दूध (Fresh Milk)</strong></td>
+                        <td>500 ml / 1 Litre</td>
+                        <td>डेअरी प्रॉडक्ट</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ताक (Mahi / Butter Milk)</strong></td>
+                        <td>200 ml / 500 ml</td>
+                        <td>पेये (Beverages)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>लस्सी (Lassi)</strong></td>
+                        <td>200 ml Cup/Pouch</td>
+                        <td>डेअरी स्विट्स</td>
+                    </tr>
+                    <tr>
+                        <td><strong>दही (Dahi / Curd)</strong></td>
+                        <td>200g / 500g / Bulk Bucket</td>
+                        <td>डेअरी प्रॉडक्ट</td>
+                    </tr>
+                    <tr>
+                        <td><strong>बासुंदी & श्रीखंड (Basundi & Shrikhand)</strong></td>
+                        <td>250g / 500g Pack</td>
+                        <td>प्रीमियम मिठाई</td>
+                    </tr>
+                    <tr>
+                        <td><strong>मोदक (Special Modak)</strong></td>
+                        <td>Box Pack (Bulk Delivery)</td>
+                        <td>फेस्टिव्हल स्पेशल</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Retailer Network List -->
+        <div class="card" style="margin-top: 25px;">
+            <h3>🏪 जोडलेली प्रमुख दुकाने / व्हेंडर्स (Retail Network Sample)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>दुकान / डेअरीचे नाव (Shop Name)</th>
+                        <th>भाग (Area)</th>
+                        <th>प्रकार (Type)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>आनंद डेअरी & स्वीट्स</td>
+                        <td>पाषाण (Pashan)</td>
+                        <td>डेअरी आउटलेट</td>
+                    </tr>
+                    <tr>
+                        <td>महालक्ष्मी प्रोव्हिजन स्टोअर्स</td>
+                        <td>बाणेर (Baner)</td>
+                        <td>रिटेल मार्ट</td>
+                    </tr>
+                    <tr>
+                        <td>साई डेअरी प्रोडक्ट्स</td>
+                        <td>औंध (Aundh)</td>
+                        <td>होलसेल व्हेंडर</td>
+                    </tr>
+                    <tr>
+                        <td>गुरुकृपा सुपर मार्केट</td>
+                        <td>बावधन (Bavdhan)</td>
+                        <td>सुपरमार्ट</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- Call to Action -->
