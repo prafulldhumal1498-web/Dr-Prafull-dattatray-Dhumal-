@@ -7,7 +7,13 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+        
         header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 50px 20px; text-align: center; }
+        
+        /* Profile Image Styling */
+        .profile-img-container { margin-bottom: 15px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
+        
         header h1 { font-size: 2.5rem; margin-bottom: 8px; font-weight: 700; }
         header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
         .badge { display: inline-block; background: #f59e0b; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-top: 15px; }
@@ -21,7 +27,9 @@
         .card ul li { padding: 10px 0; border-bottom: 1px dashed #e2e8f0; font-size: 0.95rem; }
         .card ul li:last-child { border-bottom: none; }
         
-        /* Table Styling for Products & Shops */
+        .stats-box { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 15px; border-radius: 6px; margin-bottom: 15px; }
+        .stats-box h4 { color: #1e3a8a; font-size: 1.1rem; }
+
         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
         th { background-color: #eff6ff; color: #1e3a8a; }
@@ -36,6 +44,10 @@
 <body>
 
     <header>
+        <!-- Profile Photo -->
+        <div class="profile-img-container">
+            <img src="1000056377.jpg" alt="Prafull Dhumal" class="profile-img">
+        </div>
         <h1>Prafull Dhumal</h1>
         <p>Sales, Marketing & Distribution Specialist</p>
         <div class="badge">Retail & FMCG Network Developer</div>
@@ -54,22 +66,69 @@
                 </ul>
             </div>
 
-            <!-- Coverage Areas -->
+            <!-- Route Coverage -->
             <div class="card">
                 <h3>📍 कव्हरेज एरिया व रूट्स (Coverage Areas)</h3>
                 <ul>
-                    <li>📍 <strong>पाषाण & सुतारवाडी (Pashan Route)</strong></li>
-                    <li>📍 <strong>बाणेर & बालेवाडी (Baner Route)</strong></li>
-                    <li>📍 <strong>औंध (Aundh Route)</strong></li>
-                    <li>📍 <strong>बावधन (Bavdhan Route)</strong></li>
-                    <li>📍 <strong>100+ Verified Dairy & Retail Outlets</strong></li>
+                    <li>📍 <strong>पाषाण & सुतारवाडी Route</strong> (25 Outlets)</li>
+                    <li>📍 <strong>बाणेर & बालेवाडी Route</strong> (30 Outlets)</li>
+                    <li>📍 <strong>औंध Route</strong> (20 Outlets)</li>
+                    <li>📍 <strong>बावधन Route</strong> (15 Outlets)</li>
+                    <li>📍 <strong>कोथरूड & शिवाजीनगर Route</strong> (15+ Outlets)</li>
                 </ul>
             </div>
         </div>
 
+        <!-- 100+ Outlets Network Summary -->
+        <div class="card" style="margin-top: 25px;">
+            <h3>🏪 व्हेंडर व रिटेल नेटवर्क (100+ Verified Outlets)</h3>
+            
+            <div class="stats-box">
+                <h4>📊 एकूण नेटवर्क कव्हरेज: १००+ आउटलेट्स</h4>
+                <p>पुणे शहर आणि आसपासच्या परिसरात पसरलेले थेट विक्री जाळे.</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>विभाग / एरिया (Zone)</th>
+                        <th>आउटलेट प्रकार (Outlet Types)</th>
+                        <th>संख्या (Count)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>पाषाण व सुतारवाडी</strong></td>
+                        <td>डेअरी स्टोअर्स, प्रोव्हिजन, सुपरमार्ट्स</td>
+                        <td><strong>२५+ दुकाने</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>बाणेर व बालेवाडी Highstreet</strong></td>
+                        <td>प्रीमियम स्विट्स, रिटेल मार्ट्स, बेकरी</td>
+                        <td><strong>३०+ दुकाने</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>औंध व आयटी पार्क परिसर</strong></td>
+                        <td>डेअरी आऊटलेट्स, जनरल स्टोअर्स</td>
+                        <td><strong>२०+ दुकाने</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>बावधन व चंदणी चौक</strong></td>
+                        <td>सुपर मार्केट, प्रोव्हिजन स्टोअर्स</td>
+                        <td><strong>१५+ दुकाने</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>कोथरूड, शिवाजीनगर व इतर</strong></td>
+                        <td>होलसेल व्हेंडर्स, डिस्ट्रीब्युटर्स</td>
+                        <td><strong>१५+ दुकाने</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <!-- Product List & Rates -->
         <div class="card" style="margin-top: 25px;">
-            <h3>🥛 उत्पादने आणि रेट कार्ड (Products & Rates)</h3>
+            <h3>🥛 उत्पादने आणि रेट कार्ड (Products Showcase)</h3>
             <table>
                 <thead>
                     <tr>
@@ -113,47 +172,11 @@
             </table>
         </div>
 
-        <!-- Retailer Network List -->
-        <div class="card" style="margin-top: 25px;">
-            <h3>🏪 जोडलेली प्रमुख दुकाने / व्हेंडर्स (Retail Network Sample)</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>दुकान / डेअरीचे नाव (Shop Name)</th>
-                        <th>भाग (Area)</th>
-                        <th>प्रकार (Type)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>आनंद डेअरी & स्वीट्स</td>
-                        <td>पाषाण (Pashan)</td>
-                        <td>डेअरी आउटलेट</td>
-                    </tr>
-                    <tr>
-                        <td>महालक्ष्मी प्रोव्हिजन स्टोअर्स</td>
-                        <td>बाणेर (Baner)</td>
-                        <td>रिटेल मार्ट</td>
-                    </tr>
-                    <tr>
-                        <td>साई डेअरी प्रोडक्ट्स</td>
-                        <td>औंध (Aundh)</td>
-                        <td>होलसेल व्हेंडर</td>
-                    </tr>
-                    <tr>
-                        <td>गुरुकृपा सुपर मार्केट</td>
-                        <td>बावधन (Bavdhan)</td>
-                        <td>सुपरमार्ट</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
         <!-- Call to Action -->
         <div class="cta-section">
             <h2>तुमचा व्यवसाय आणि विक्री वाढवण्यासाठी संपर्क साधा</h2>
             <p>नवीन ब्रँड लाँचिंग, व्हेंडर नेटवर्क आणि एफएमसीजी वितरणासाठी थेट संपर्क साधू शकता.</p>
-            <a href="https://wa.me/" class="btn-whatsapp">📲 WhatsApp द्वारे कनेक्ट व्हा</a>
+            <a href="https://wa.me/919370105924?text=Hello%20Prafull,%20I%20want%20to%20connect%20for%20business%20and%20distribution." class="btn-whatsapp" target="_blank">📲 WhatsApp (+91 9370105924)</a>
         </div>
     </container>
 
